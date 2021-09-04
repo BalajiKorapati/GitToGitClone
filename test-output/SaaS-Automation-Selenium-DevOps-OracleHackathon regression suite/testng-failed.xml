@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [SaaS-Automation-Selenium-DevOps-OracleHackathon regression suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.saas.reporting.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="4" verbose="3" name="SaaS Testing - login(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.saas.tests.LoginPageTest">
+        <methods>
+          <include name="verifyLoginUser"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.saas.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- SaaS Testing - login(failed) -->
+</suite> <!-- Failed suite [SaaS-Automation-Selenium-DevOps-OracleHackathon regression suite] -->
