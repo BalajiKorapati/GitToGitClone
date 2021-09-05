@@ -17,9 +17,9 @@ pipeline {
                 echo 'QA Deploy'
             }
         }
-        stage("Smoke Test"){
+        stage("Smoke Test - QA"){
             steps {
-                echo 'Smoke Testing'
+                echo 'Smoke Testing in QA'
             }
         }
         stage("Regression Test"){
@@ -32,9 +32,9 @@ pipeline {
                 echo 'Dev PROD'
             }
         }
-        stage("Smoke Test"){
+        stage("Smoke Test - PROD"){
             steps {
-                echo 'Smoke Testing'
+                echo 'Smoke Testing in Production'
             }
         }
     }
