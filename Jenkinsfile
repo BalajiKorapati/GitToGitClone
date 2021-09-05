@@ -17,9 +17,24 @@ pipeline {
                 echo 'QA Deploy'
             }
         }
+        stage("Smoke Test"){
+            steps {
+                echo 'Smoke Testing'
+            }
+        }
+        stage("Regression Test"){
+            steps {
+                echo 'Regression Testing'
+            }
+        }
         stage("Deploy on PROD"){
             steps {
                 echo 'Dev PROD'
+            }
+        }
+        stage("Smoke Test"){
+            steps {
+                echo 'Smoke Testing'
             }
         }
     }
