@@ -20,18 +20,18 @@
 		</classes>
 	</test>
 
-	<!--<test name="SaaS Testing - login1">
+	<test name="SaaS Testing - login1">
 	<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.saas.tests.LoginPageTest" />
 		</classes>
 	</test>
 
-	<test name="Demo Cart Feature Testing - Product page"> 
+	<test name="SaaS Testing - login2"> 
 	<parameter name="browser" value="firefox" />
 		<classes> 
-			<class name="com.qa.opencart.Tests.ProductPageTest" /> 
+			<class name="com.saas.tests.LoginPageTest" /> 
 		</classes> 
-	</test> -->
+	</test>
 
 </suite>

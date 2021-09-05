@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="SaaS-Automation-Selenium-DevOps-OracleHackathon regression suite" duration-ms="27686" started-at="2021-09-04T11:34:07Z" finished-at="2021-09-04T11:34:34Z">
+  <suite name="SaaS-Automation-Selenium-DevOps-OracleHackathon regression suite" duration-ms="43848" started-at="2021-09-04T12:36:06Z" finished-at="2021-09-04T12:36:50Z">
     <groups>
     </groups>
-    <test name="SaaS Testing - login" duration-ms="27686" started-at="2021-09-04T11:34:07Z" finished-at="2021-09-04T11:34:34Z">
+    <test name="SaaS Testing - login" duration-ms="29339" started-at="2021-09-04T12:36:06Z" finished-at="2021-09-04T12:36:36Z">
       <class name="com.saas.tests.LoginPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.saas.tests.LoginPageTest@2687f956]" name="setUp" is-config="true" duration-ms="19965" started-at="2021-09-04T11:34:07Z" finished-at="2021-09-04T11:34:27Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.saas.tests.LoginPageTest@30135202]" name="setUp" is-config="true" duration-ms="20731" started-at="2021-09-04T12:36:06Z" finished-at="2021-09-04T12:36:27Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,61 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginUser()[pri:1, instance:com.saas.tests.LoginPageTest@2687f956]" name="verifyLoginUser" duration-ms="154" started-at="2021-09-04T11:34:27Z" finished-at="2021-09-04T11:34:27Z">
+        <test-method status="PASS" signature="verifyLoginUser()[pri:1, instance:com.saas.tests.LoginPageTest@30135202]" name="verifyLoginUser" duration-ms="420" started-at="2021-09-04T12:36:27Z" finished-at="2021-09-04T12:36:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginUser -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.saas.tests.LoginPageTest@2687f956]" name="tearDown" is-config="true" duration-ms="7376" started-at="2021-09-04T11:34:27Z" finished-at="2021-09-04T11:34:34Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.saas.tests.LoginPageTest@30135202]" name="tearDown" is-config="true" duration-ms="7798" started-at="2021-09-04T12:36:28Z" finished-at="2021-09-04T12:36:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.saas.tests.LoginPageTest -->
     </test> <!-- SaaS Testing - login -->
+    <test name="SaaS Testing - login1" duration-ms="29733" started-at="2021-09-04T12:36:06Z" finished-at="2021-09-04T12:36:36Z">
+      <class name="com.saas.tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.saas.tests.LoginPageTest@76954a33]" name="setUp" is-config="true" duration-ms="20629" started-at="2021-09-04T12:36:06Z" finished-at="2021-09-04T12:36:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginUser()[pri:1, instance:com.saas.tests.LoginPageTest@76954a33]" name="verifyLoginUser" duration-ms="420" started-at="2021-09-04T12:36:27Z" finished-at="2021-09-04T12:36:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUser -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.saas.tests.LoginPageTest@76954a33]" name="tearDown" is-config="true" duration-ms="8192" started-at="2021-09-04T12:36:28Z" finished-at="2021-09-04T12:36:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.saas.tests.LoginPageTest -->
+    </test> <!-- SaaS Testing - login1 -->
+    <test name="SaaS Testing - login2" duration-ms="43848" started-at="2021-09-04T12:36:06Z" finished-at="2021-09-04T12:36:50Z">
+      <class name="com.saas.tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.saas.tests.LoginPageTest@4a29f290]" name="setUp" is-config="true" duration-ms="34313" started-at="2021-09-04T12:36:06Z" finished-at="2021-09-04T12:36:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginUser()[pri:1, instance:com.saas.tests.LoginPageTest@4a29f290]" name="verifyLoginUser" duration-ms="93" started-at="2021-09-04T12:36:41Z" finished-at="2021-09-04T12:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUser -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.saas.tests.LoginPageTest@4a29f290]" name="tearDown" is-config="true" duration-ms="9422" started-at="2021-09-04T12:36:41Z" finished-at="2021-09-04T12:36:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.saas.tests.LoginPageTest -->
+    </test> <!-- SaaS Testing - login2 -->
   </suite> <!-- SaaS-Automation-Selenium-DevOps-OracleHackathon regression suite -->
 </testng-results>
