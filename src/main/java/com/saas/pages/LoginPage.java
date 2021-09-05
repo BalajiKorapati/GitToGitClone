@@ -32,7 +32,7 @@ public class LoginPage {
 		elementUtil = new ElementUtil(driver);
 	}
 
-	// 3. public Page actions (methods)
+	// 3. public Page actions (methods) 
 
 	public String getLoginPageTitle() {
 		return elementUtil.waitForTitle(5, Constants.LOGIN_PAGE_TITLE);
