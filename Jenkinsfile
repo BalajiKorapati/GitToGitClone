@@ -1,41 +1,52 @@
-pipeline {
-    agent any
-    
-    stages {
-        stage("Build"){
-            steps {
-                echo 'Build the project'
+pipeline { 
+agent any 
+    stages { 
+        
+        stage ('Build') { 
+            steps{
+                echo "Building"
+
             }
         }
-        stage("Deploy on Dev"){
+ //for linux ---> bat "mvn clean install"   
+        stage('Test') {
             steps {
-                echo 'Dev Deploy'
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                    bat "mvn clean install"
+                }
             }
         }
-        stage("Deploy on QA"){
-            steps {
-                echo 'QA Deploy'
+                
+     
+        stage('Publish Allure Reports') {
+           steps {
+                script {
+                    allure([
+                        includeProperties: false,
+                        jdk: '',
+                        properties: [],
+                        reportBuildPolicy: 'ALWAYS',
+                        results: [[path: '/allure-results']]
+                    ])
+                }
             }
         }
-        stage("Smoke Test - QA"){
-            steps {
-                echo 'Smoke Testing in QA'
+        
+        
+        stage('Publish Extent Report'){
+            steps{
+                     publishHTML([allowMissing: false,
+                                  alwaysLinkToLastBuild: false, 
+                                  keepAll: false, 
+                                  reportDir: 'build', 
+                                  reportFiles: 'TestExecutionReport.html', 
+                                  reportName: 'HTML Extent Report', 
+                                  reportTitles: ''])
             }
         }
-        stage("Regression Test"){
-            steps {
-                echo 'Regression Testing'
-            }
-        }
-        stage("Deploy on PROD"){
-            steps {
-                echo 'Dev PROD'
-            }
-        }
-        stage("Smoke Test - PROD"){
-            steps {
-                echo 'Smoke Testing in Production'
-            }
-        }
+        
+        
+        
     }
-}
+
+ }
