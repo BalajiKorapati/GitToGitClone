@@ -13,7 +13,7 @@
 			<class name="com.qa.opencart.Tests.RegistrationPageTest" />
 		</classes>
 	</test> -->
-	<test name="SaaS Testing - login">
+	<test name="SaaS Testing - login0">
 	<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.saas.tests.LoginPageTest" />
